@@ -1,0 +1,68 @@
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-lightred: #ff6a6a;
+$color-red: #ff0000;
+$color-blue: #66E6FF;
+
+
+$color-gold: #c7a602;
+$color-gray: #9c9889;
+$color-lightgray: #c7c7c7;
+$color-green: #008e00;
+$color-pompadour: #6f006f;
+
+
+.btn {
+  align-self: center;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+  height: 30px;
+  min-width: 80px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.name {
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+input {
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+@mixin borderColor($border, $background, $color) {
+  border-color: $border;
+  background-color: $background;
+  color: $color;
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    flex-direction: column;
+
+  }
+}
